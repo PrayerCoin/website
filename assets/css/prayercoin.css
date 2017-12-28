@@ -1,0 +1,23 @@
+.stats div, .pay div {
+    margin: 0 auto;
+}
+
+.metamask {
+  width: 312px;
+  height: 49px;
+  background-size: 100%;
+  background-image: url('../../images/metamask.png');
+  cursor: pointer;
+}
+
+.metamask:hover {
+  background-image: url('../../images/metamask-hov.png');
+}
+
+.metamask:active {
+  background-image: url('../../images/metamask.png');
+}
+
+#countdown {
+    font-size: 4em;
+}
