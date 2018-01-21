@@ -2869,8 +2869,9 @@
 		table th {
 			font-size: 0.9em;
 			font-weight: bold;
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			padding: 0.75em 0.75em 0em 0.75em;
+			text-align: center;
+            vertical-align: bottom;
 		}
 
 		table thead {
