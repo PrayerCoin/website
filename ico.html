@@ -29,47 +29,59 @@
 			<section id="zero" class="wrapper">
 				<div class="inner alt">
 					<section class="special">
-                        <h3>Presale</h3>
+<div class="ether">
+                            <h3>Contract Address</h3>
+                            <a href="https://etherscan.io/address/0x06012c8cf97bead5deae237070f9587f8e7a266d" target="_blank">0x06012c8cf97bead5deae237070f9587f8e7a266d</a>
+						</div>
                         <br />
-                        <div id="countdown">25d 00h 00m</div>
-                        <br />
-                        <br />
-                        <div>
-                            <p>
-                                A total of <i><b>666,666,666</b></i> PRAY will be issued.
-                            <br />
-                                A <i><b>66%</b></i> bonus will be applied for the first <i><b>66,666</b></i> tokens issued.
-                            <br />
-                                A <i><b>6.6%</b></i> bonus will be applied between <i><b>66,666</b></i> and <i><b>666,666</b></i> tokens issued.
-                            <br />
-                                All tokens issued after that will be issued at a rate of <i><b>6,666</b></i> PRAY per <i><b>1</i></b> ETH.
-                            </p>
-                            <table>
-                                <tr>
-                                    <th>Range</th>
-                                    <th>Bonus</th>
-                                    <th>Tokens per ETH</th>
-                                </tr>
-                                <tr>
-                                    <td><i><b>0</b></i> - <i><b>66,666</b></i> PRAY</td>
-                                    <td><i><b>66%</b></i></td>
-                                    <td><i><b>11066</b></i> PRAY</td>
-                                </tr>
-                                <tr>
-                                    <td><i><b>66,666 - 666,666</b></i> PRAY</td>
-                                    <td><i><b>6.6%</b></i></td>
-                                    <td><i><b>7106</b></i> PRAY</td>
-                                </tr>
-                                <tr>
-                                    <td><i><b>666,666</b></i> - <i><b>666,666,666</b></i> PRAY</td>
-                                    <td><i><b>0%</b></i></td>
-                                    <td><i><b>6,666</b></i> PRAY</td>
-                                </tr>
-                            </table>
-                            <p>
-                                <a target="_blank" href="https://tokenmarket.net/what-is/how-to-participate-ethereum-token-crowdsale/">Click here for instructions on participating in this crowdsale</a>
-                            </p>
+                        <div class="instructions">
+                            <h3>Send ETH directly to this address, or use the button below to pay with BTC or any other coin.</h3>
                         </div>
+                        <div class="conversion">
+                            <h3>1 ETH = 1000 PRAY</h3>
+                        </div>
+                        <div class="progress">
+                            
+                        </div>
+                        <div class="pay" style="display:flex">
+                        <div class="manual">
+                            <div class="squarecash" style="display:inline;">
+                                <a href="https://cash.me/$PrayerCoinICO" target="_blank">
+                                    <button id="squarecash">SquareCash</button>
+                                </a>
+                            </div>
+                            <div class="venmo" style="display:inline;">
+                                <a href="https://cash.me/$PrayerCoinICO" target="_blank">
+                                    <button id="venmo">Venmo</button>
+                                </a>
+                            </div>
+                            
+                            <div>Include your ETH address in note/description</div>
+                        </div>
+                            <div class="metamask"></div>
+                            <div class="shapeshift">
+                                <script>
+                                    function shapeshift_click(a,e){e.preventDefault();var link=a.href;window.open(link,'1418115287605','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;}
+                                </script> 
+                                <a onclick="shapeshift_click(this, event);" href="https://shapeshift.io/shifty.html?destination=0x0D16B6708fE5dE4d34e898F406426153F85880Ca&amp;output=ETH&amp;amount=1">
+                                <img src="https://shapeshift.io/images/shifty/xs_dark_altcoins.png" class="ss-button"></a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="stats" style="display:flex">
+						    <div class="eth-raised">
+                                <h3>ETH Raised</h3>
+                                <h2>42</h2>
+						    </div>
+						    <div class="usd-raised">
+                                <h3>USD Raised</h3>
+                                <h2>$320,032</h2>
+						    </div>
+						    <div class="pray-issued">
+                                <h3>PRAY Tokens Issued</h3>
+                                <h2>500,000</h2>
+						    </div>
+						</div>
 					</section>
 				</div>
 			</section>
@@ -169,7 +181,8 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/countdown.js"></script>
+			<script src="assets/js/metamask.js"></script>
+			<script src="assets/js/stats.js"></script>
 			<!-- <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
             <script>

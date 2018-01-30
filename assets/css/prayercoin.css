@@ -18,6 +18,20 @@
   background-image: url('../../images/metamask.png');
 }
 
+#squarecash {
+  width: 160px;
+  height: 50px;
+  background: #0bb634;
+  color: white !important;
+}
+
+#venmo {
+  width: 160px;
+  height: 50px;
+  background: #5fa1d2;
+  color: white !important;
+}
+
 #countdown {
     font-size: 3.5em;
 }
@@ -177,3 +191,4 @@
     display: none;
   }
 }
+
