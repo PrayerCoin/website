@@ -3,7 +3,7 @@
 }
 
 .metamask {
-  width: 312px;
+  min-width: 312px;
   height: 49px;
   background-size: 100%;
   background-image: url('../../images/metamask.png');
