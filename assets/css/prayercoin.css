@@ -18,6 +18,12 @@
   background-image: url('../../images/metamask.png');
 }
 
+#bar {
+    width: 10%;
+    height: 40px;
+    background: #4696e5;
+}
+
 #squarecash {
   width: 160px;
   height: 50px;

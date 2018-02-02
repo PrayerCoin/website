@@ -1,4 +1,4 @@
-var icoDate = new Date("February 2, 2018 10:00:00 ").getTime();
+var icoDate = new Date("February 4, 2018 10:00:00 ").getTime();
 
 var countdown = document.getElementById("countdown");
 
