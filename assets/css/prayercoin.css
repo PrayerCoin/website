@@ -18,6 +18,10 @@
   background-image: url('../../images/metamask.png');
 }
 
+#metamaskval {
+    display: inline-block;
+}
+
 #bar {
     width: 10%;
     min-width: 50px;

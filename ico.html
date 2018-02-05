@@ -34,7 +34,7 @@
 
 <div class="ether">
                             <h3>Contract Address</h3>
-                            <a href="https://etherscan.io/address/0x06012c8cf97bead5deae237070f9587f8e7a266d" target="_blank">0x06012c8cf97bead5deae237070f9587f8e7a266d</a>
+                            <a href="https://etherscan.io/token/0x43ad0e9446e72c5b9677a108f2b1d4adf34452cd" target="_blank">0x43ad0e9446e72c5b9677a108f2b1d4adf34452cd</a>
 						</div>
                         <br />
                         <div class="instructions">
@@ -46,26 +46,17 @@
                         </div>
                         <br />
                         <div class="pay" style="display:flex;flex-wrap:wrap;">
-                        <div class="manual">
-                            <div class="squarecash" style="display:inline;">
-                                <a href="https://cash.me/$PrayerCoinICO" target="_blank">
-                                    <button id="squarecash">SquareCash</button>
-                                </a>
-                            </div>
-                            <div class="venmo" style="display:inline;">
-                                <a href="https://cash.me/$PrayerCoinICO" target="_blank">
-                                    <button id="venmo">Venmo</button>
-                                </a>
-                            </div>
-                            
-                            <div>Include your ETH address in note/description</div>
-                        </div>
+                        
+                            <div>
+                                <label for="metamaskval" style="display:inline-block;">ETH:</label>
+                            <input id="metamaskval" value="0.001" step="0.001" min="0.001" type="number" placeholder="ETH to send"></input>
                             <div class="metamask"></div>
+                            </div>
                             <div class="shapeshift">
                                 <script>
                                     function shapeshift_click(a,e){e.preventDefault();var link=a.href;window.open(link,'1418115287605','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;}
                                 </script> 
-                                <a onclick="shapeshift_click(this, event);" href="https://shapeshift.io/shifty.html?destination=0x0D16B6708fE5dE4d34e898F406426153F85880Ca&amp;output=ETH&amp;amount=1">
+                                <a onclick="shapeshift_click(this, event);" href="https://shapeshift.io/shifty.html?destination=0x43ad0e9446e72c5b9677a108f2b1d4adf34452cd&amp;output=ETH&amp;amount=1">
                                 <img src="https://shapeshift.io/images/shifty/xs_dark_altcoins.png" class="ss-button"></a>
                             </div>
                         </div>
@@ -87,7 +78,23 @@
                                 <h2>500,000</h2>
 						    </div>
 						</div>
-
+                        <br />
+                        <br />
+                        <div class="manual">
+                            <p>We also accept fiat purchases through SquareCash/Venmo</p>
+                            <div class="squarecash" style="display:inline;">
+                                <a href="https://cash.me/$PrayerCoinICO" target="_blank">
+                                    <button id="squarecash">SquareCash</button>
+                                </a>
+                            </div>
+                            <div class="venmo" style="display:inline;">
+                                <a href="https://venmo.com/PrayerCoinICO" target="_blank">
+                                    <button id="venmo">Venmo</button>
+                                </a>
+                            </div>
+                            
+                            <div>Include your ETH address in note/description</div>
+                        </div>
                         <br />
                         <br />
                         <div>
@@ -228,6 +235,7 @@ Today, PrayerCoin is allowing you to send prayers in the most substantial way in
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/stats.js"></script>
+			<script src="assets/js/metamask.js"></script>
 			<!-- <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
             <script>
