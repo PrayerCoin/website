@@ -7,15 +7,21 @@
     var bar = document.getElementById("bar");
 
     const apiKey = 'TKQTU42TCH6DB96TZ5ARNYRW5346BMV6ZG';
+    const tokenAddr = '0x43ad0e9446e72c5b9677a108f2b1d4adf34452cd';
 
-    $.getJSON('https://api.etherscan.io/api?module=account&action=tokenbalance&contractaddress=0x57d90b64a1a57749b0f932f1a3395792e12e7055&address=0xe04f27eb70e025b78871a2ad7eabe85e61212761&tag=latest&apikey=' + apiKey,
+    $.getJSON('https://api.etherscan.io/api?module=account&action=balance&address=' + tokenAddr + '&tag=latest&apikey=' + apiKey, function (data) {
+        data.result += 15.00;
+        ethRaised.innerHTML = numWCommas(data.result);
+        usdRaised.innerHTML = '$' + numWCommas(data.result * 900);
+    })
+
+    $.getJSON('https://api.etherscan.io/api?module=account&action=tokenbalance&contractaddress=' + tokenAddr + '&address=0x798b0a600cd5698eb5d3e853444a384fa36fe12e&tag=latest&apikey=' + apiKey,
         function (data) {
-            data.result = parseFloat(data.result).toFixed(2);
-            ethRaised.innerHTML = numWCommas(data.result);
-            usdRaised.innerHTML = '$' + numWCommas(data.result * 700);
-            tokensIssued.innerHTML = numWCommas(data.result * 1000);
+            data.result = 666666666 - (parseFloat(data.result) / 1000000000000000000) + 6666666;
+            tokensIssued.innerHTML = numWCommas(data.result);
             console.log(data.result, data.result / 6666);
-            bar.style.width = (data.result / 6666) + '%';
+            bar.style.width = (data.result / 666666) + '%';
+            bar.innerHTML = (data.result / 666666).toFixed(0) + '%';
         }
     );
 
