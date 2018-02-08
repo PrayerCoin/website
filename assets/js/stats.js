@@ -17,7 +17,7 @@
 
     $.getJSON('https://api.etherscan.io/api?module=account&action=tokenbalance&contractaddress=' + tokenAddr + '&address=0x798b0a600cd5698eb5d3e853444a384fa36fe12e&tag=latest&apikey=' + apiKey,
         function (data) {
-            data.result = 666666666 - (parseFloat(data.result) / 1000000000000000000) + 239333;
+            data.result = 666666666 - (parseFloat(data.result) / 1000000000000000000) + 14496.46;
             tokensIssued.innerHTML = numWCommas(data.result.toFixed(2));
             console.log(data.result, data.result / 6666);
             bar.innerHTML = (data.result / 666666).toFixed(1) + '%';
