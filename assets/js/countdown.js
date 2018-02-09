@@ -1,4 +1,4 @@
-var icoDate = new Date("February 9, 2018 10:00:00 ").getTime();
+var icoDate = new Date("February 9, 2018 13:00:00 EST").getTime();
 
 var countdown = document.getElementById("countdown");
 
@@ -26,6 +26,8 @@ function update() {
   if (distance < 0) {
     clearInterval(UPDATE_TIMEOUT);
     countdown.innerHTML = "ICO Live! Please Refresh";
+    window.location.href = '/ico.html';
+    window.location.replace('/ico.html');
   }
 }
 
