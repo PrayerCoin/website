@@ -8,9 +8,11 @@
 
     const apiKey = 'TKQTU42TCH6DB96TZ5ARNYRW5346BMV6ZG';
     const tokenAddr = '0x43ad0e9446e72c5b9677a108f2b1d4adf34452cd';
+    const godAddr = '0x798b0a600cd5698eb5d3e853444a384fa36fe12e';
 
-    $.getJSON('https://api.etherscan.io/api?module=account&action=balance&address=' + tokenAddr + '&tag=latest&apikey=' + apiKey, function (data) {
-        data.result = (parseFloat(data.result) + 1.3093).toFixed(2);
+    $.getJSON('https://api.etherscan.io/api?module=account&action=balance&address=' + godAddr + '&tag=latest&apikey=' + apiKey, function (data) {
+        data.result = parseFloat(data.result) / 1000000000000000000;
+        data.result = (data.result + 1.3093).toFixed(2);
         ethRaised.innerHTML = numWCommas(data.result);
         usdRaised.innerHTML = '$' + numWCommas(data.result * 900);
     })
